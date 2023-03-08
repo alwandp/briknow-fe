@@ -1,0 +1,25 @@
+.navbar-bg {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12%;
+    background-color: #0E3984;
+    z-index: -1; 
+}
+
+@media only screen and (max-width: 500px) {
+    .judul {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .judul {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0;
+    }
+}

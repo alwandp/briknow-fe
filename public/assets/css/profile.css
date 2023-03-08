@@ -1,0 +1,112 @@
+html {
+    scroll-behavior: smooth;
+}
+.ava {
+    max-width: 120px;
+    object-fit: contain; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    box-shadow: 1px 3px 7px #c1c1c1;
+}
+
+.badge-logo{
+    max-width: 50px;
+}
+
+#badge-title{
+    font-size: medium;
+}
+#badge-desc{
+    font-size: small;
+}
+
+#grade-desc {
+    font-weight: bold;
+    color: #4F4F4F;
+    font-size: 14px;
+}
+
+.progress {
+    height: 24px;
+}
+
+.circle-xp{
+    position: absolute;
+    top: 8px;
+}
+
+/* @media only screen and (max-width: 992px) {
+    #master{
+        left: 30%;
+    }
+    #grandmaster{
+        left: 57%;
+    }
+} */
+
+#junior{
+    left: 0!important;
+    /* position: absolute; */
+    /* opacity: 0.5; */
+}
+
+#master{
+    left: 33%!important;
+    /* position: absolute; */
+    /* opacity: 0.5; */
+}
+#grandmaster{
+    left: 65.5%!important;
+    /* position: absolute; */
+    /* opacity: 0.5; */
+}
+
+#legendary{
+    right: 0!important;
+    /* position: absolute; */
+    /* opacity: 0.5; */
+}
+
+/* #level_item1 { */
+    /* left: 0; */
+    /* position: absolute; */
+/* } */
+#level_item0 {
+    left: 0;
+    position: absolute;
+    top: 55%;
+}
+#level_item1 {
+    left: 30%;
+    position: absolute;
+    top: 55%;
+}
+#level_item2 {
+    left: 60%;
+    position: absolute;
+    top: 55%;
+}
+#level_item3 {
+    right: 0;
+    position: absolute;
+    top: 55%;
+}
+
+/* RESOLUSI TINGGI */
+/* @media only screen and (min-width: 768px) {
+    #grandmaster{
+        left: 52.5%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #grandmaster{
+        left: 56.5%;
+    }
+}
+@media only screen and (min-width: 2000px) {
+    #master{
+        left: 31.5%;
+    }
+    #grandmaster{
+        left: 62.5%;
+    }
+} */

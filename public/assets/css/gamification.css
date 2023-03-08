@@ -1,0 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
+.ava {
+    max-width: 120px;
+    object-fit: contain; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    /* width: 100%; */
+    /* max-height: 120px; */
+    margin-bottom: 1rem;
+}
+
+.logo-achievements {
+    max-width: 50px;
+}

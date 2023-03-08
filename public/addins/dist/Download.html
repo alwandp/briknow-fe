@@ -1,0 +1,255 @@
+<!doctype html><html><head><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="chrome=1"/><meta name="viewport" content="width=device-width,initial-scale=1"><title>Word Add-In with Commands Sample</title><script src="https://briknow.bri.co.id/addins/assets/Scripts/jquery-3.6.0.js"></script><script src="https://briknow.bri.co.id/addins/assets/Scripts/FabricUI/MessageBanner.js"></script><script src="https://briknow.bri.co.id/addins/assets/Scripts/Office/1/office.js"></script><script src="Home.js"></script><link rel="stylesheet" href="https://briknow.bri.co.id/addins/assets/Content/fabric.min.css"><link rel="stylesheet" href="https://briknow.bri.co.id/addins/assets/Content/fabric.components.min.css"><link rel="stylesheet" href="https://briknow.bri.co.id/addins/assets/Content/Custom.css"><style>.kaki{bottom:0;position:fixed;display:block;width:100%}table{border-collapse:separate!important;border:solid #000 1px;border-radius:6px;-moz-border-radius:6px}th{border-color:inherit;border-style:none!important;border-width:0;border-bottom-width:1px!important;font-weight:500!important}td{border-bottom-width:0!important;border-top-width:1px!important;color:#2f80ed;font-size:10px}</style><link href="https://briknow.bri.co.id/addins/assets/Content/bootstrap/bootstrap.min.css" rel="stylesheet"><link href="https://briknow.bri.co.id/addins/assets/Content/select2/select2.min.css" rel="stylesheet"/><script src="https://briknow.bri.co.id/addins/assets/Scripts/jquery-3.6.0.js"></script><script src="https://briknow.bri.co.id/addins/assets/Scripts/select2/select2.min.js"></script><script src="https://briknow.bri.co.id/addins/assets/Scripts/sweetalert/sweetalert2.min.js"></script></head><body><nav class="navbar navbar-expand-lg navbar-light bg-primary text-white"><div class="container-fluid"><a class="navbar-brand" href="#"><img src="https://briknow.bri.co.id/addins/assets/bri know-white.png" alt="" width="100px" height="24"> </a><button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link text-white" aria-current="page" href="Home.html"><svg class="w-6 h-6 me-1" width="19px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Pencarian</a></li><li class="nav-item"><a class="nav-link text-white" href="Download.html"><svg class="w-6 h-6 me-1" width="19px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"></path></svg> Download</a></li><li class="nav-item"><button class="btn nav-link text-white" onclick="logout()"><svg class="w-6 h-6 me-1" width="19px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg> Logout</button></li></ul></div></div></nav><div class="search-section pt-3 pb-2 px-2"><div class="d-flex justify-content-center"><div class="col-md-5 col-sm-12"><h2 class="text-center mb-4 header-text">Cari & Download File Pendukung Dari Seluruh Project BRI.</h2><select class="pencarian_project form-control" id="cari" placeholder="Cari Nama Project" style="width:100%" onchange="getdata()"><option value="3620194" selected="selected" disabed>Cari Nama Project</option></select></div></div></div><div class="content-isi mx-3"><div class="pb-4"><div class="row"><div class="col-md-12"><div id="alert"></div></div></div><div class="row"><div class="col-md-12"><div id="detail"></div><div id="listfile"></div></div></div></div></div><footer class="footer mt-auto py-3 bg-light kaki"><div class="container"><div class="d-flex justify-content-between"><div><small class="text-muted">BRIKNOW v1.0</small></div><div><small class="text-muted" id="supportedVersion"></small></div></div></div></footer><script src="https://briknow.bri.co.id/addins/assets/Scripts/bootstrap/popper.min.js"></script><script src="https://briknow.bri.co.id/addins/assets/Scripts/bootstrap/bootstrap.min.js"></script><script src="https://briknow.bri.co.id/addins/assets/Scripts/FileSaver/FileSaver.min.js"></script><script>$(document).ready(function () {
+            let personal_number = localStorage.getItem("personal_number");
+            let email           = localStorage.getItem("email");
+            let username        = localStorage.getItem("username");
+
+            if(personal_number === null){
+                window.location.replace("Login.html");
+            }else{
+                let endpoint = `https://briknow.bri.co.id/addins/cek_auth`;
+                let token    = localStorage.getItem("token");
+                $.ajax({
+                    url: endpoint,
+                    type: "post",
+                    data: {'data': token},
+                    success: function(response){
+                        if(response.status === '1'){}else{
+                            localStorage.removeItem("personal_number");
+                            localStorage.removeItem("email");
+                            localStorage.removeItem("username");
+                            localStorage.removeItem("token");
+
+                            window.location.replace("Login.html");
+                        }
+                    },
+                    error : function(e){
+                        localStorage.removeItem("personal_number");
+                        localStorage.removeItem("email");
+                        localStorage.removeItem("username");
+                        localStorage.removeItem("token");
+
+                        window.location.replace("Login.html");
+                    }
+                })
+            }
+        });
+
+        function logout(){
+            let endpoint = `https://briknow.bri.co.id/addins/logout`;
+            let token    = localStorage.getItem("token");
+            $.ajax({
+                url: endpoint,
+                type: "post",
+                data: {'data': token},
+                beforeSend: function(){
+                },
+                success: function(response){
+                    if(response.status === '1'){
+                        localStorage.removeItem("personal_number");
+                        localStorage.removeItem("email");
+                        localStorage.removeItem("username");
+                        localStorage.removeItem("token");
+                        window.location.replace("Login.html");
+                    }else{
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'top-end',
+                            showConfirmButton: false,
+                            timer: 3000,
+                            timerProgressBar: true,
+                            didOpen: (toast) => {
+                              toast.addEventListener('mouseenter', Swal.stopTimer)
+                              toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            }
+                          })
+                          Toast.fire({
+                            icon: 'error',
+                            title: 'Logout Failed!'
+                          })
+                    }
+                },
+                error : function(e){
+                    const Toast = Swal.mixin({
+                        toast: true,
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                          toast.addEventListener('mouseenter', Swal.stopTimer)
+                          toast.addEventListener('mouseleave', Swal.resumeTimer)
+                        }
+                      })
+                      Toast.fire({
+                        icon: 'error',
+                        title: 'Logout Failed!'
+                      })
+                }
+            })
+        }
+
+
+        //select2
+        let tokenAddins = `${localStorage.getItem("token")}`;
+        $('.pencarian_project').select2({
+            ajax: {
+                url: 'https://briknow.bri.co.id/addins/searchproject',
+                type: "post",
+                data: function (params) {
+                    return {
+                        searchTerm: params.term, // search term
+                        token: tokenAddins
+                    };
+                },
+                processResults: function (response) {
+                    return {
+                        results: response
+                    };
+                },
+                cache: true
+            }
+        });
+
+        function bytesToSize(bytes) {
+            var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+            if (bytes == 0) return '0 Byte';
+            var i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+            return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
+        }
+
+        function getdata(){
+            let hasil = document.getElementById('cari').value;
+
+            let endpoint = `https://briknow.bri.co.id/addins/detailproject/${hasil}`;
+            $.ajax({
+                url: endpoint,
+                // contentType: "application/json",
+                type: "post",
+                // dataType: 'json',
+                data: {token: tokenAddins},
+                beforeSend: function(){
+                    $('#detail').html(`Please Wait . . . `);
+                    $('#listfile').html(``);
+                },
+                success: function(response){
+                    console.log(response.data);
+                    if(response.status === 1){
+                        //cek restriction
+                        var cek = false;
+                        if(response.data.is_restricted  === 1){
+                            for(c = 0; c < response.data.user_restrict.length; c++){
+                                var temp_pn = localStorage.getItem("personal_number");
+                                if( temp_pn == response.data.user_restrict[c].user.personal_number){
+                                    cek = true;
+                                }
+                            }
+                        }else{
+                            cek = true;
+                        }
+
+                        //scaffolding
+                        var consul    = "";
+                        if(response.data.consultant.length == 0){
+                            consul = `-`;
+                        }else{
+                            for(c = 0; c < response.data.consultant.length; c++){
+                                if(c == 0){
+                                    consul += `${response.data.consultant[c].nama}`;
+                                }else{
+                                    consul += `,${response.data.consultant[c].nama}`;
+                                }
+                            }
+                        }
+                        $('#detail').html(`
+                            <div class="form-group mb-2">
+                                <span class="badge rounded-pill bg-success">
+                                    <small><svg class="w-6 h-6 me-1" width="12px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>${response.data.divisi.divisi}</small>
+                                </span>
+                                <h5 class="mb-0 mt-1"><svg class="w-6 h-6 me-1" width="20px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"></path></svg>${response.data.nama}</h5>
+                                <div class="row mx-0">
+                                    <small class="font-monospace">
+                                        <svg class="w-6 h-6" fill="none" width="15px" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                        ${consul}
+                                    </small
+                                </div>
+                                <small class="font-monospace"><svg class="w-6 h-6 me-1" width="15px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>${response.data.project_managers.nama}</small>
+                            </div>
+                        `);
+
+                        $('#listfile').html(`
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Files</th>
+                                        <th>Date Modified</th>
+                                        <th>Size</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="coloumnrow">
+                                </tbody>
+                            </table>
+                        `);
+
+                        //cek resault restriction
+                        if(cek === true){
+                            const months = ["Januari", "Februari", "Maret","April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+                            if(response.data.document.length > 0){
+                                for(i = 0; i < response.data.document.length; i++){
+                                    var current_datetime = new Date(response.data.document[i].updated_at)
+                                    var formatted_date = current_datetime.getDate() + " " + months[current_datetime.getMonth()] + " " + current_datetime.getFullYear()
+
+                                    document.getElementById("coloumnrow").innerHTML += `
+                                        <tr>
+                                            <td>
+                                                <a href="https://briknow.bri.co.id/storage/${response.data.document[i].url_file}" target="_blank" class="text-decoration-none">
+                                                    <svg class="mx-auto mb-1" width="15px" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                                                    ${response.data.document[i].nama}
+                                                </a>
+                                            </td>
+                                            <td>${formatted_date}</td>
+                                            <td>${bytesToSize(response.data.document[i].size)}</td>
+                                        </tr>
+                                    `;
+                                }
+                            }else{
+                                document.getElementById("coloumnrow").innerHTML += `
+                                    <tr>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                    </tr>
+                                `;
+                            }
+                        }else{
+                            document.getElementById("coloumnrow").innerHTML += `
+                                    <tr>
+                                        <td colspan="3" class="text-center">File Is Restricted</td>
+                                    </tr>
+                                `;
+                        }
+
+                    }else{
+                        const Toast = Swal.mixin({
+                            toast: true,
+                            position: 'top-end',
+                            showConfirmButton: false,
+                            timer: 3000,
+                            timerProgressBar: true,
+                            didOpen: (toast) => {
+                              toast.addEventListener('mouseenter', Swal.stopTimer)
+                              toast.addEventListener('mouseleave', Swal.resumeTimer)
+                            }
+                          })
+                          Toast.fire({
+                            icon: 'error',
+                            title: response.data.message
+                          })
+                    }
+                },
+                error : function(e){
+                    console.log(e);
+                    $('#detail').html(`Mengambil Data Project Gagal, Coba Lagi.`);
+                    $('#listfile').html(``);
+                }
+            })
+        }</script><script src="polyfill.js"></script></body></html>

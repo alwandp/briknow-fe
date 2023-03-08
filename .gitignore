@@ -1,0 +1,5 @@
+/tests
+/vendor
+storage*
+node_modules
+.env

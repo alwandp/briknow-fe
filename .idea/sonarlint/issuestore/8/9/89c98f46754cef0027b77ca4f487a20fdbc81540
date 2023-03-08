@@ -1,0 +1,25 @@
+
+R	php:S1808
+"=Move this open curly brace to the beginning of the next line.(Ÿ¨Å˜
+_	php:S1808
+"JPut one space between the closing parenthesis and the opening curly brace.(Ÿ¨Å˜
+d	php:S1808'"JPut one space between the closing parenthesis and the opening curly brace.(è¦¡ıÿÿÿÿ
+d	php:S1808)"JPut one space between the closing parenthesis and the opening curly brace.(İÚ£ıûÿÿÿÿ
+P	php:S1808"6Put exactly one space after comma separated arguments.(û¦“Şüÿÿÿÿ
+L	php:S1808"2Remove any space before comma separated arguments.(–¾¹ıÿÿÿÿ
+f	php:S1808"QRemove all space between the method name "curl_exec" and the opening parenthesis.(³Ğª§
+P	php:S18087"6Put exactly one space after comma separated arguments.(¸œÒßøÿÿÿÿ
+b	php:S1808'"HPut one space between this "elseif" keyword and the opening parenthesis.(è¦¡ıÿÿÿÿ
+b	php:S1808)"HPut one space between this "elseif" keyword and the opening parenthesis.(İÚ£ıûÿÿÿÿ
+[	php:S1808,"FPut one space between this "else" keyword and the opening curly brace.(å¥‡
+^	php:S18080"DPut one space between this "if" keyword and the opening parenthesis.(’ıÖüÿÿÿÿ
+[	php:S18083"FPut one space between this "else" keyword and the opening curly brace.(å¥‡
+[	php:S18088"FPut one space between this "else" keyword and the opening curly brace.(å¥‡
+[	php:S1808="FPut one space between this "else" keyword and the opening curly brace.(å¥‡
+Q	php:S1142
+"<This method has 5 returns, which is more than the 3 allowed.(Ÿ¨Å˜
+i	php:S3776
+"TRefactor this function to reduce its Cognitive Complexity from 32 to the 15 allowed.(Ÿ¨Å˜
+I	php:S1066D"/Merge this if statement with the enclosing one.(÷şÊÔùÿÿÿÿ
+8php:S125"Remove this commented out code.(×â•íúÿÿÿÿ
+Z	php:S4830"@Enable server certificate validation on this SSL/TLS connection.(–¾¹ıÿÿÿÿ

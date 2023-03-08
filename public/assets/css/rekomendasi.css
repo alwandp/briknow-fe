@@ -1,0 +1,71 @@
+.table:not(.table-sm):not(.table-md):not(.dataTable) td,
+.table:not(.table-sm):not(.table-md):not(.dataTable) th {
+    padding: 0px 0px 0px 20px !important;
+    height: 50px;
+    text-align: left;
+    background: white;
+}
+
+.table:not(.table-sm) thead th {
+    background-color: rgba(240, 242, 245, 1);
+    color: black;
+    border: none;
+}
+
+td>div {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#btn-view {
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: normal;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#th-line {
+    border-top: 1px solid rgba(214, 214, 214, 1);
+    border-bottom: 1px solid rgba(214, 214, 214, 1);
+    background-color: rgba(240, 242, 245, 1);
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    border-bottom: 1px solid rgba(214, 214, 214, 1);
+    text-align: center;
+}
+
+.select2-container--bootstrap .select2-selection--single {
+    line-height: 2;
+}
+
+#search,
+.form-control:not(.form-control-sm):not(.form-control-lg) {
+    height: 30px;
+}
+
+#th-attachment, #td-attachment{
+    text-align : left;
+}
+
+#th-metodologi, #td-metodologi{
+    text-align : center;
+}
+
+#table-attachment{
+    margin-top : 10px;
+}
+
+/* ---------------------------------------------------------- */

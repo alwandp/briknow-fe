@@ -1,0 +1,17 @@
+
+dphp:S103"KSplit this 172 characters long line (which is greater than 120 authorized).(áæŞ€üÿÿÿÿ
+dphp:S103"KSplit this 138 characters long line (which is greater than 120 authorized).(êêÄºÿÿÿÿÿ
+dphp:S103"KSplit this 139 characters long line (which is greater than 120 authorized).(š¨üÆüÿÿÿÿ
+dphp:S103"KSplit this 172 characters long line (which is greater than 120 authorized).(áæŞ€üÿÿÿÿ
+dphp:S103"KSplit this 138 characters long line (which is greater than 120 authorized).(êêÄºÿÿÿÿÿ
+dphp:S103"KSplit this 142 characters long line (which is greater than 120 authorized).(ôÓ¯°øÿÿÿÿ
+`php:S103"KSplit this 149 characters long line (which is greater than 120 authorized).(Åùïì
+HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(áæŞ€üÿÿÿÿ
+HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(êêÄºÿÿÿÿÿ
+HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(š¨üÆüÿÿÿÿ
+HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(áæŞ€üÿÿÿÿ
+HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(êêÄºÿÿÿÿÿ
+HWeb:BoldAndItalicTagsCheck"Replace this <i> tag by <em>.(ôÓ¯°øÿÿÿÿ
+C	Web:S18276")Remove this deprecated "width" attribute.(˜ëÃ—úÿÿÿÿ
+MWeb:TableWithoutCaptionCheckc" Add a description to this table.(Ó÷®Œûÿÿÿÿ
+NWeb:TableWithoutCaptionCheck‡" Add a description to this table.(çı¦Íûÿÿÿÿ

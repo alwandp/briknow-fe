@@ -1,0 +1,65 @@
+
+dphp:S103!"KSplit this 132 characters long line (which is greater than 120 authorized).(ÜìÉüıÿÿÿÿ
+^php:S103S"KSplit this 148 characters long line (which is greater than 120 authorized).(×‰¤O
+ephp:S103"KSplit this 150 characters long line (which is greater than 120 authorized).(ÄÔûıÿÿÿÿ
+`php:S103Ï"KSplit this 123 characters long line (which is greater than 120 authorized).(¢ÚÕï
+`php:S103Š"KSplit this 142 characters long line (which is greater than 120 authorized).(ºÆî°
+ephp:S103Ä"KSplit this 139 characters long line (which is greater than 120 authorized).(Ìíš—ıÿÿÿÿ
+`php:S103"KSplit this 138 characters long line (which is greater than 120 authorized).(‰î‡í
+W	php:S1808c"=Move this open curly brace to the beginning of the next line.(Öôùÿÿÿÿ
+_	php:S1808"JPut one space between the closing parenthesis and the opening curly brace.(áÑºq
+_	php:S1808È"JPut one space between the closing parenthesis and the opening curly brace.(áÑºq
+Q	php:S1808”"6Put exactly one space after comma separated arguments.(ÜÁÏâüÿÿÿÿ
+^	php:S1808j"DPut one space between this "if" keyword and the opening parenthesis.(Âè®Òúÿÿÿÿ
+Y	php:S1808m"DPut one space between this "if" keyword and the opening parenthesis.(ŞôÈ
+^	php:S1808p"DPut one space between this "if" keyword and the opening parenthesis.(œñ¡±ÿÿÿÿÿ
+^	php:S1808s"DPut one space between this "if" keyword and the opening parenthesis.(ßì¼ëúÿÿÿÿ
+^	php:S1808v"DPut one space between this "if" keyword and the opening parenthesis.(³“”Îøÿÿÿÿ
+`	php:S1808ä"EPut one space between this "try" keyword and the opening curly brace.(¡»¢üùÿÿÿÿ
+`	php:S1808Ÿ"EPut one space between this "try" keyword and the opening curly brace.(¡»¢üùÿÿÿÿ
+ophp:S117"\Rename this local variable "$type_list" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(‘Ú»t
+vphp:S117&"]Rename this local variable "$type_array" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(ÎÊŠÛıÿÿÿÿ
+mphp:S117,"ZRename this local variable "$sync_es" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¶ÂŸ
+pphp:S117-"]Rename this local variable "$token_auth" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¡e
+mphp:S117e"ZRename this local variable "$sync_es" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¶ÂŸ
+pphp:S117f"]Rename this local variable "$token_auth" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¡e
+nphp:S117¨"ZRename this local variable "$sync_es" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¶ÂŸ
+qphp:S117©"]Rename this local variable "$token_auth" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¡e
+nphp:S117â"ZRename this local variable "$sync_es" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¶ÂŸ
+qphp:S117ã"]Rename this local variable "$token_auth" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¡e
+nphp:S117"ZRename this local variable "$sync_es" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¶ÂŸ
+qphp:S117"]Rename this local variable "$token_auth" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¡e
+pphp:S117Ş"\Rename this local variable "$type_list" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(‘Ú»t
+wphp:S117ã"]Rename this local variable "$type_array" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(æ¤Ùúÿÿÿÿ
+nphp:S117é"ZRename this local variable "$sync_es" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¶ÂŸ
+qphp:S117ê"]Rename this local variable "$token_auth" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¡e
+nphp:S117£"ZRename this local variable "$sync_es" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¶ÂŸ
+qphp:S117¤"]Rename this local variable "$token_auth" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(¡e
+~	php:S1192_"iDefine a constant instead of duplicating this literal "Get Data Bermasalah , Silahkan Coba Lagi" 6 times.(²™àõ
+y	php:S11922"_Define a constant instead of duplicating this literal "Content-Type: application/json" 7 times.(±ã³–ùÿÿÿÿ
+f	php:S1192["QDefine a constant instead of duplicating this literal "Session Time Out" 6 times.(Ìşü§
+i	php:S1192>"ODefine a constant instead of duplicating this literal "api/divisi/all" 5 times.(Œ¸†˜úÿÿÿÿ
+a	php:S1192\"GDefine a constant instead of duplicating this literal "/login" 6 times.(å´ìíûÿÿÿÿ
+s	php:S11923"YDefine a constant instead of duplicating this literal "Accept: application/json" 7 times.( ïİ“şÿÿÿÿ
+A	php:S1481e"-Remove this unused "$sync_es" local variable.(¶ÂŸ
+D	php:S1481f"0Remove this unused "$token_auth" local variable.(¡e
+@	php:S1481Œ"*Remove this unused "$data" local variable.(­íß¾
+I	php:S1066Y"/Merge this if statement with the enclosing one.(÷şÊÔùÿÿÿÿ
+J	php:S1066š"/Merge this if statement with the enclosing one.(÷şÊÔùÿÿÿÿ
+J	php:S1066Õ"/Merge this if statement with the enclosing one.(÷şÊÔùÿÿÿÿ
+J	php:S1066"/Merge this if statement with the enclosing one.(÷şÊÔùÿÿÿÿ
+J	php:S1066Ê"/Merge this if statement with the enclosing one.(÷şÊÔùÿÿÿÿ
+J	php:S1066–"/Merge this if statement with the enclosing one.(÷şÊÔùÿÿÿÿ
+4php:S125"Remove this commented out code.(…ƒı
+Z	php:S48308"@Enable server certificate validation on this SSL/TLS connection.(–¾¹ıÿÿÿÿ
+U	php:S4830@"@Enable server certificate validation on this SSL/TLS connection.(Œ–ğ
+[	php:S4830ƒ"@Enable server certificate validation on this SSL/TLS connection.(–¾¹ıÿÿÿÿ
+[	php:S4830´"@Enable server certificate validation on this SSL/TLS connection.(–¾¹ıÿÿÿÿ
+V	php:S4830¼"@Enable server certificate validation on this SSL/TLS connection.(Œ–ğ
+[	php:S4830î"@Enable server certificate validation on this SSL/TLS connection.(–¾¹ıÿÿÿÿ
+V	php:S4830ö"@Enable server certificate validation on this SSL/TLS connection.(Œ–ğ
+[	php:S4830©"@Enable server certificate validation on this SSL/TLS connection.(–¾¹ıÿÿÿÿ
+V	php:S4830±"@Enable server certificate validation on this SSL/TLS connection.(Œ–ğ
+[	php:S4830õ"@Enable server certificate validation on this SSL/TLS connection.(–¾¹ıÿÿÿÿ
+V	php:S4830ı"@Enable server certificate validation on this SSL/TLS connection.(Œ–ğ
+[	php:S4830®"@Enable server certificate validation on this SSL/TLS connection.(–¾¹ıÿÿÿÿ

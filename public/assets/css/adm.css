@@ -1,0 +1,242 @@
+.index-1 {
+    z-index: 1 !important;
+  }
+
+  .menu-kiri d-flex justify-content-center {
+    padding: .5rem 1rem !important;
+  }
+
+  .btn-dashboard {
+    color: #6296db !important;
+  }
+  .btn-dashboard.active {
+    background-color: #C5DCFA !important;
+    color: #0F56B3 !important;
+  }
+
+  .btn-dashboard:hover {
+    background-color: #C5DCFA !important;
+    color: #0F56B3 !important;
+  }
+
+.btn-menu-com {
+  color: #0e3984;
+}
+
+.btn-menu-com.active {
+  background-color: #C0E1F7FF !important;
+  color: #092451;
+}
+
+.btn-menu-com:hover {
+  background-color: #c0e1f7 !important;
+  color: #092451;
+}
+
+  .btn-manageuser {
+    color: #47d15a;
+  }
+  .btn-manageuser.active {
+    background-color: #e1fae4 !important;
+    color: #1F8B24;
+  }
+
+  .btn-manageuser:hover {
+    background-color: #e1fae4 !important;
+    color: #1F8B24;
+  }
+  .btn-manageproject {
+    color: #EB984E;
+  }
+  .btn-manageproject.active {
+    background-color: #FAE5D3 !important;
+    color: #CA6F1E;
+  }
+
+  .btn-manageproject:hover {
+    background-color: #FAE5D3 !important;
+    color: #CA6F1E;
+  }
+  .btn-uploadproject {
+    color: #AF7AC5;
+  }
+  .btn-uploadproject.active {
+    background-color: #EBDEF0 !important;
+    color: #7D3C98;
+  }
+
+  .btn-uploadproject:hover {
+    background-color: #EBDEF0 !important;
+    color: #7D3C98;
+  }
+  .btn-manageleasson {
+    color: #2fed64;
+  }
+  .btn-manageleasson.active {
+    background-color: #e5fcdc !important;
+    color: #2fed64;
+  }
+  .btn-manageleasson:hover {
+    background-color: #e5fcdc !important;
+    color: #2fed64;
+  }
+  .btn-managecom {
+    color: #8f0c0c;
+  }
+  .btn-managecom.active {
+    background-color: #ffe2e2 !important;
+    color: #8f0c0c;
+  }
+  .btn-managecom:hover {
+    background-color: #ffe2e2 !important;
+    color: #8f0c0c;
+  }
+  .btn-managegamification {
+    color: #e3e664;
+  }
+  .btn-managegamification.active {
+    background-color: #faf7d3 !important;
+    color: #dab200;
+  }
+
+  .btn-managegamification:hover {
+    background-color: #faf7d3 !important;
+    color: #dab200;
+  }
+  .btn-manageforum {
+    color: #e66475;
+  }
+  .btn-manageforum.active {
+    background-color: #fad3d3 !important;
+    color: #EB5757;
+  }
+
+  .btn-manageforum:hover {
+    background-color: #fad3d3 !important;
+    color: #EB5757;
+  }
+  .btn-manageuker {
+    color: #64e2e6;
+  }
+  .btn-manageuker.active {
+    background-color: #c2f8f8 !important;
+    color: #53dada;
+  }
+
+  .btn-manageuker:hover {
+    background-color: #c2f8f8 !important;
+    color: #53dada;
+  }
+
+  .select2-container{
+    height: 30px !important;
+  }
+
+  .select2-container .select2-selection--single{
+    height: 30px !important;
+    min-height: 30px;
+  }
+
+  .bulet-biru {
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    background: #C5DCFA;
+  }
+
+  .bulet-cyan {
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    background: #c2f8f8;
+  }
+  .bulet-ijo {
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    background: #e1fae4;
+  }
+  .bulet-oren {
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    background: #FAE5D3;
+  }
+  .bulet-ungu {
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    background: #EBDEF0;
+  }
+  .bulet-emas {
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    background: #faf7d3;
+  }
+  .bulet-merah {
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    background: #fad3d3;
+  }
+  .bulet-hijau-cerah {
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    background: #e2f9e3;
+  }
+  .bulet-merah-tua {
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    background: #f6cded;
+  }
+
+  .f-20{
+      font-size:20px;
+  }
+
+  .h-0{
+    height: 0px !important;
+    }
+
+.h-20{
+    height: 20px !important;
+    }
+#waow{
+    border: solid rgba(47, 128, 237, 1);
+    max-width: 85px;
+    margin: 0;
+}
+
+@media (max-width: 455px){
+  .col-sm-6 {
+      -ms-flex: 0 0 100% !important;
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}

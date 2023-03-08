@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+
+.layar-back{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: rgb(0 0 0 / 58%);
+}
+
+.congrats {
+	position: absolute;
+	top: 140px;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+    color:white;
+    font-family: fantasy;
+    text-transform: uppercase;
+}
+
+.name-badge{
+    font-family: 'Sigmar One';
+    text-transform: uppercase;
+    padding-top:5px;
+}
+
+.task-badge{
+    text-transform: uppercase;
+    padding-bottom:15px;
+}
+
+.message-congrats{
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+h1 {
+	transform-origin: 50% 50%;
+	font-size: 300%;
+	font-family: 'Sigmar One', cursive;
+	cursor: pointer;
+	z-index: 2;
+	position: absolute;
+	top: 0; 
+	text-align: center;
+	width: 100%;
+    text-shadow: 1px 1px 5px black;
+}
+
+.blob {
+	height: 50px;
+	width: 50px;
+	color: #ffcc00;
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	z-index: 1;
+	font-size: 30px;
+	display: none;	
+}
+
+/* confetti */
+
+/* ---- reset ---- */
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+/* ---- tsparticles container ---- */
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.btn-continue{
+    box-shadow: 3px 3px #b78119 !important;
+    z-index : 999;
+}
+
+
+@media only screen and (max-width: 390px) {
+    h1 {
+        transform-origin: 50% 50%;
+        font-size: 1.3rem;
+        font-family: 'Sigmar One', cursive;
+        cursor: pointer;
+        z-index: 2;
+        padding: 20px 0px;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        width: 100%;
+        text-shadow: 1px 1px 5px black;
+    }
+}

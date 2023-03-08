@@ -1,0 +1,27 @@
+// Fonts
+@import '../../public/assets/fonts/Nunito/Nunito.css';
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//Fontawesome 5.15.4
+$fa-font-path:"../webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+//Owl Carousel
+@import "owl.carousel/dist/assets/owl.carousel.css";
+@import "owl.carousel";
+
+//Select 2
+@import "select2";
+
+// emojione
+
+// ckeditor
+// @import "ckeditor4";

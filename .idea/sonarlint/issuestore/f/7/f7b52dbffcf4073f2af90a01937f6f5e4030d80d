@@ -1,0 +1,29 @@
+
+W	php:S1808
+"=Move this open curly brace to the beginning of the next line.(Ïä´£ûÿÿÿÿ
+d	php:S1808
+"JPut one space between the closing parenthesis and the opening curly brace.(Ïä´£ûÿÿÿÿ
+P	php:S1808"6Put exactly one space after comma separated arguments.(Ó²ïñıÿÿÿÿ
+L	php:S1808"2Remove any space before comma separated arguments.(–¾¹ıÿÿÿÿ
+f	php:S1808"QRemove all space between the method name "curl_exec" and the opening parenthesis.(³Ğª§
+P	php:S18085"6Put exactly one space after comma separated arguments.(–Ïƒÿúÿÿÿÿ
+P	php:S1808Y"6Put exactly one space after comma separated arguments.(Ó²ïñıÿÿÿÿ
+L	php:S1808["2Remove any space before comma separated arguments.(–¾¹ıÿÿÿÿ
+f	php:S1808^"QRemove all space between the method name "curl_exec" and the opening parenthesis.(³Ğª§
+P	php:S1808z"6Put exactly one space after comma separated arguments.(–Ïƒÿúÿÿÿÿ
+[	php:S18084"FPut one space between this "else" keyword and the opening curly brace.(å¥‡
+[	php:S1808:"FPut one space between this "else" keyword and the opening curly brace.(å¥‡
+[	php:S1808y"FPut one space between this "else" keyword and the opening curly brace.(å¥‡
+[	php:S1808"FPut one space between this "else" keyword and the opening curly brace.(å¥‡
+V	php:S1142
+"<This method has 5 returns, which is more than the 3 allowed.(Ïä´£ûÿÿÿÿ
+V	php:S1142N"<This method has 5 returns, which is more than the 3 allowed.(Ú™Ú­ıÿÿÿÿ
+vphp:S117"]Rename this local variable "$token_auth" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(ŒÖÈ„şÿÿÿÿ
+vphp:S117P"]Rename this local variable "$token_auth" to match the regular expression ^[a-z][a-zA-Z0-9]*$.(ŒÖÈ„şÿÿÿÿ
+~	php:S1192;"iDefine a constant instead of duplicating this literal "Get Data Bermasalah , Silahkan Coba Lagi" 4 times.(²™àõ
+I	php:S1066A"/Merge this if statement with the enclosing one.(÷şÊÔùÿÿÿÿ
+J	php:S1066†"/Merge this if statement with the enclosing one.(÷şÊÔùÿÿÿÿ
+Z	php:S4830"@Enable server certificate validation on this SSL/TLS connection.(–¾¹ıÿÿÿÿ
+U	php:S4830"@Enable server certificate validation on this SSL/TLS connection.(Œ–ğ
+Z	php:S4830["@Enable server certificate validation on this SSL/TLS connection.(–¾¹ıÿÿÿÿ
+U	php:S4830c"@Enable server certificate validation on this SSL/TLS connection.(Œ–ğ

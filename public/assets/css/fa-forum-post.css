@@ -1,0 +1,12 @@
+#editorlink {
+    height: 150px;
+}
+
+.select2-container--default .select2-selection--multiple{
+    background-color: #fdfdff !important;
+    border-color: #e4e6fc !important;
+}
+
+.select2.select2-container.select2-container--default{
+    width: 100% !important;
+}
